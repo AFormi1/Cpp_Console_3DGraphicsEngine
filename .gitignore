@@ -46,7 +46,7 @@ packages/
 *_p.c
 *.ilk
 *.meta
-*.obj
+#*.obj include obj files for testing
 *.pch
 *.pdb
 *.pgc

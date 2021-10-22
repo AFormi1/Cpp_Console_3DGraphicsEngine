@@ -19,15 +19,15 @@ int main()
 	//Create Instance
 	MyConsoleGameEngine3D demo3D;
 
-	demo3D.setShowHiddenFaces(false);
-	demo3D.setShowWireFrame(false);
 	demo3D.setShowShaded(true);
-	demo3D.setShiftObjInZ(8.0f);
+	demo3D.setShowWireFrame(false);	
+	demo3D.setShiftObjInZ(6.0f);
+	//demo3D.setFilename("VideoShip.obj");
+	demo3D.setFilename("teapot.obj");
 
 
-	if (demo3D.ConstructConsole(300, 300, 2, 2))
+	if (demo3D.ConstructConsole(350, 350, 2, 2))
 	{
-
 		demo3D.Start();
 	}
 	return 0;
