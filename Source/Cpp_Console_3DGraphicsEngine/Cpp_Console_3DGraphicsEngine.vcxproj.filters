@@ -32,5 +32,11 @@
     <ClInclude Include="MyConsoleGameEngine3D.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="VectorAndMatrixOperations.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleColour.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

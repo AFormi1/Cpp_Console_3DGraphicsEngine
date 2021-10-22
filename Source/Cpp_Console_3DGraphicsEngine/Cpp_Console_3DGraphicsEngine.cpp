@@ -1,12 +1,14 @@
-#include <iostream>
 #include "MyConsoleGameEngine3D.h"
-
+#include <fstream>
+#include <strstream>
+#include <algorithm>
 using namespace std;
 
 
 
 int main()
 {
+
 	cout << "###########################################" << endl;
 	cout << "#                                         #" << endl;
 	cout << "#     C++ Console 3D Graphics Engine      #" << endl;
@@ -16,22 +18,42 @@ int main()
 	cout << endl << endl;
 
 
-	//Create Instance
-	MyConsoleGameEngine3D demo3D;
-
-	demo3D.setShowShaded(true);
-	demo3D.setShowWireFrame(false);	
-	demo3D.setShiftObjInZ(6.0f);
-	//demo3D.setFilename("VideoShip.obj");
-	demo3D.setFilename("teapot.obj");
+	MyConsoleGameEngine3D demo;
+	demo.setShowWire(false);
 
 
-	if (demo3D.ConstructConsole(350, 350, 2, 2))
+
+	if (false)
 	{
-		demo3D.Start();
+		demo.setFilename("obj_VideoShip.obj");
+		demo.setInitialWindowOffset(10.0f);
+		demo.setButtonSpeed(5.0f);
 	}
+	if (false)
+	{
+		demo.setFilename("obj_teapot.obj");
+		demo.setInitialWindowOffset(10.0f);
+		demo.setButtonSpeed(5.0f);
+	}
+	if (false)
+	{
+		demo.setFilename("obj_axis.obj");
+		demo.setInitialWindowOffset(20.0f);
+		demo.setButtonSpeed(10.0f);
+	}
+
+	if (true)
+	{
+		demo.setFilename("obj_mountains.obj");
+		demo.setInitialWindowOffset(150.0f);
+		demo.setButtonSpeed(20.0f);
+	}
+
+
+	if (demo.ConstructConsole(350, 350, 2, 2))
+		demo.Start();
+
 	return 0;
-
-
-
 }
+
+

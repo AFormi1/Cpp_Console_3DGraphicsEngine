@@ -144,9 +144,11 @@
     <ClCompile Include="MyConsoleGameEngine3D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConsoleColour.h" />
     <ClInclude Include="ConsoleGameEngine.h" />
     <ClInclude Include="MyConsoleGameEngine3D.h" />
     <ClInclude Include="ObjectStructures.h" />
+    <ClInclude Include="VectorAndMatrixOperations.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
